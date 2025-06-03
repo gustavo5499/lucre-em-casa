@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lucre em Casa - Ebook e Pagamento</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+  }
+  header, footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  main {
+    max-width: 800px;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+  }
+  h1, h2, h3 {
+    color: #4CAF50;
+  }
+  section {
+    margin-bottom: 2em;
+  }
+  .chave-pix {
+    font-weight: bold;
+    background: #eee;
+    padding: 0.5em;
+    border-radius: 4px;
+    word-break: break-all;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+  .qr-code img {
+    width: 200px;
+  }
+  .button-copy {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button-copy:hover {
+    background: #45a049;
+  }
+  .contact {
+    text-align: center;
+  }
+  .testimonials, .faq {
+    background: #e8f5e9;
+    padding: 1em;
+    border-radius: 6px;
+  }
+  .testimonials blockquote, .faq p {
+    margin: 0.5em 0;
+  }
+  .cta {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 6px;
+    margin: 2em 0;
+  }
+  .cta h2 {
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Lucre em Casa</h1>
+    <p>Transforme seu tempo livre em renda com nosso ebook</p>
+  </header>
+
+  <main>
+    <!-- Seção de apresentação do ebook -->
+    <section>
+      <h2>Sobre o ebook</h2>
+      <p>Descubra como ganhar dinheiro sem sair de casa com nosso guia prático e direto ao ponto. Aprenda técnicas comprovadas para começar a lucrar online ainda hoje!</p>
+      <h3>O que você vai aprender:</h3>
+      <ul>
+        <li>Ferramentas para trabalhar de casa</li>
+        <li>Passo a passo para iniciantes</li>
+        <li>Dicas para gerar renda extra</li>
+      </ul>
+      <h3>Valor promocional: <span style="color: red;">R$ 19,99</span></h3>
+    </section>
+
+    <!-- Seção de testemunhos -->
+    <section class="testimonials">
+      <h2>O que dizem nossos leitores</h2>
+      <blockquote>“Consegui começar a lucrar logo na primeira semana! Recomendo muito.” – <em>João M.</em></blockquote>
+      <blockquote>“As dicas são simples e práticas, me ajudaram bastante.” – <em>Fernanda S.</em></blockquote>
+      <blockquote>“Ótima leitura, mudou minha forma de ver a renda online!” – <em>Paulo R.</em></blockquote>
+    </section>
+
+    <!-- Seção de perguntas frequentes -->
+    <section class="faq">
+      <h2>Perguntas Frequentes</h2>
+      <h3>Como recebo o ebook?</h3>
+      <p>Após o pagamento e o envio do comprovante, enviaremos o ebook diretamente para o seu e-mail.</p>
+      <h3>É seguro comprar por Pix?</h3>
+      <p>Sim! Usamos Pix como forma de pagamento rápida e confiável. Garantimos a entrega após a confirmação do pagamento.</p>
+      <h3>Posso compartilhar o ebook?</h3>
+      <p>O ebook é exclusivo para o comprador. Compartilhamentos não são permitidos para mantermos o preço acessível.</p>
+    </section>
+
+    <!-- Seção de pagamento (movida para depois do FAQ) -->
+    <section>
+      <h2>Pagamento via Pix</h2>
+      <p>Realize o pagamento via Pix e garanta seu ebook agora mesmo:</p>
+      <p><strong>Chave Pix:</strong></p>
+      <div class="chave-pix">gustavinhopeixoto09@gmail.com</div><br>
+      <button class="button-copy" onclick="copiarPix()">Copiar chave Pix</button>
+
+      <div class="qr-code" style="margin: 1em 0;">
+        <p>Ou escaneie o QR Code abaixo para pagar:</p>
+        <img src="https://www.seusite.com.br/qrcode-pix.png" alt="QR Code do Pix" />
+      </div>
+
+      <p>Após o pagamento, envie o comprovante para nosso WhatsApp:</p>
+      <div class="contact">
+        <p><strong>WhatsApp: (21) 98307-8641</strong></p>
+      </div>
+
+      <p style="margin-top: 1em; font-size: 0.9em;">Pagamento 100% seguro. O ebook será enviado para o seu e-mail após a confirmação.</p>
+    </section>
+
+    <!-- Chamada para ação final -->
+    <section class="cta">
+      <h2>Não perca tempo! Garanta seu ebook e comece a lucrar hoje mesmo 🚀</h2>
+    </section>
+
+    <!-- Seção de contato -->
+    <section>
+      <h2>Contato e Suporte</h2>
+      <p>Se tiver qualquer dúvida ou problema, basta nos chamar no WhatsApp! Estamos aqui para te ajudar a começar a lucrar em casa hoje mesmo.</p>
+      <p><strong>WhatsApp: (21) 98307-8641</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lucre em Casa | Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function copiarPix() {
+      const chave = "gustavinhopeixoto09@gmail.com";
+      navigator.clipboard.writeText(chave);
+      alert("Chave Pix copiada!");
+    }
+  </script>
+</body>
+</html>
