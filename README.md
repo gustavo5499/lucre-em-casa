@@ -1,1 +1,0 @@
-# lucre-em-casa
